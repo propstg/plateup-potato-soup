@@ -66,6 +66,10 @@ namespace PotatoSoup.custom {
             MaterialUtils.ApplyMaterial(Prefab, "ingredients/dumplings-1", CommonMaterials.eggDough);
             MaterialUtils.ApplyMaterial(Prefab, "ingredients/dumplings-2", CommonMaterials.eggDough);
 
+            if (Prefab.TryGetComponent<ItemGroupView>(out var itemGroupView)) {
+                itemGroupView.gameObject.transform.Find("Colour Blind").localPosition = new Vector3(0, 0.6f, 0);
+            }
+
             Prefab.GetComponent<PotatoSoupPlainUncookedItemGroupView>()?.Setup(Prefab);
         }
 

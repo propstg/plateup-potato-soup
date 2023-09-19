@@ -6,9 +6,10 @@ namespace PotatoSoup {
         private static Material[] wrap(Material material) => new Material[] { material };
 
         public static Material[] metalShiny => wrap(MaterialUtils.GetExistingMaterial("Metal- Shiny"));
-        public static Material[] eggDough => wrap(MaterialUtils.GetExistingMaterial("Egg Dough"));
-        public static Material[] milk => wrap(MaterialUtils.GetExistingMaterial("Coffee Cup"));
-        public static Material[] potatoes => wrap(MaterialUtils.GetExistingMaterial("Sack"));
+        public static Material[] bowl => wrap(MaterialUtils.GetExistingMaterial("Wallpaper - Stripes Red"));
+        public static Material[] eggDough => wrap(MaterialUtils.GetExistingMaterial("Raw Potato"));
+        public static Material[] milk => wrap(MaterialUtils.GetExistingMaterial("Milk"));
+        public static Material[] potatoes => wrap(MaterialUtils.GetExistingMaterial("Cooked Potato"));
         public static Material[] foam => wrap(MaterialUtils.GetExistingMaterial("Uncooked Batter"));
     }
 }

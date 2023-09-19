@@ -48,6 +48,10 @@ namespace PotatoSoup.custom {
             MaterialUtils.ApplyMaterial(Prefab, "ingredients/liquid", CommonMaterials.milk);
             MaterialUtils.ApplyMaterial(Prefab, "ingredients/potatoes", CommonMaterials.potatoes);
 
+            if (Prefab.TryGetComponent<ItemGroupView>(out var itemGroupView)) {
+                itemGroupView.gameObject.transform.Find("Colour Blind").localPosition = new Vector3(0, 0.6f, 0);
+            }
+
             Prefab.GetComponent<PotatoesInMilkItemGroupView>()?.Setup(Prefab);
         }
 

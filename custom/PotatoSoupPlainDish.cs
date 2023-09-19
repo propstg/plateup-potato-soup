@@ -35,7 +35,7 @@ namespace PotatoSoup.custom {
         };
 
         public override List<Dish.MenuItem> ResultingMenuItems => new List<Dish.MenuItem>() {
-            new Dish.MenuItem() { Phase = MenuPhase.Main, Item = Refs.Potato, Weight = 1 },
+            new Dish.MenuItem() { Phase = MenuPhase.Main, Item = Refs.PotatoSoupPlainServing, Weight = 1 },
         };
 
         public override Dictionary<Locale, string> Recipe => new Dictionary<Locale, string> {
@@ -61,6 +61,10 @@ namespace PotatoSoup.custom {
             MaterialUtils.ApplyMaterial(prefab, "ingredients/dumplings-2", CommonMaterials.eggDough);
             MaterialUtils.ApplyMaterial(prefab, "ingredients/liquid", CommonMaterials.milk);
             MaterialUtils.ApplyMaterial(prefab, "ingredients/potatoes", CommonMaterials.potatoes);
+            MaterialUtils.ApplyMaterial(prefab, "PotatoSoupServing/bowl", CommonMaterials.metalShiny);
+            MaterialUtils.ApplyMaterial(prefab, "PotatoSoupServing/liquid", CommonMaterials.milk);
+            MaterialUtils.ApplyMaterial(prefab, "PotatoSoupServing/potatoes", CommonMaterials.potatoes);
+            MaterialUtils.ApplyMaterial(prefab, "PotatoSoupServing/dumplings", CommonMaterials.eggDough);
         }
     }
 }
