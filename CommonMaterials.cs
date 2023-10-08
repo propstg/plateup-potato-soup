@@ -1,9 +1,9 @@
 ﻿using KitchenLib.Utils;
 using UnityEngine;
 
-namespace PotatoSoup {
+namespace blargle.PotatoSoup {
+
     public class CommonMaterials {
-        private static Material[] wrap(Material material) => new Material[] { material };
 
         public static Material[] metalShiny => wrap(MaterialUtils.GetExistingMaterial("Metal- Shiny"));
         public static Material[] bowl => wrap(MaterialUtils.GetExistingMaterial("Wallpaper - Stripes Red"));
@@ -11,5 +11,7 @@ namespace PotatoSoup {
         public static Material[] milk => wrap(MaterialUtils.GetExistingMaterial("Milk"));
         public static Material[] potatoes => wrap(MaterialUtils.GetExistingMaterial("Cooked Potato"));
         public static Material[] foam => wrap(MaterialUtils.GetExistingMaterial("Uncooked Batter"));
+
+        private static Material[] wrap(Material material) => new Material[] { material };
     }
 }

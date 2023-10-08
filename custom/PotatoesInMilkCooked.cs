@@ -4,7 +4,7 @@ using KitchenLib.Customs;
 using KitchenLib.Utils;
 using UnityEngine;
 
-namespace PotatoSoup.custom {
+namespace blargle.PotatoSoup.custom {
 
     public class PotatoesInMilkCooked : CustomItem {
 

@@ -1,19 +1,18 @@
-﻿using Kitchen;
+﻿using blargle.PotatoSoup.custom;
+using Kitchen;
 using KitchenLib;
 using KitchenMods;
-using PotatoSoup.custom;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
-namespace PotatoSoup
-{
+namespace blargle.PotatoSoup {
 
     public class Main : BaseMod {
 
         public const string MOD_ID = "blargle.PotatoSoup";
         public const string MOD_NAME = "Potato Soup";
-        public const string MOD_VERSION = "0.0.0";
+        public const string MOD_VERSION = "0.0.1";
         public const string MOD_AUTHOR = "blargle";
 
         public static AssetBundle bundle;

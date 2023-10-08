@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static KitchenData.ItemGroup;
 
-namespace PotatoSoup.custom {
+namespace blargle.PotatoSoup.custom {
 
     public class PotatoesInMilkUncooked : CustomItemGroup<PotatoesInMilkUncooked.PotatoesInMilkItemGroupView> {
 

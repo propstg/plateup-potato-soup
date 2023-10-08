@@ -1,11 +1,10 @@
-﻿using IngredientLib.Ingredient.Items;
+﻿using blargle.PotatoSoup.custom;
+using IngredientLib.Ingredient.Items;
 using KitchenData;
 using KitchenLib.References;
 using KitchenLib.Utils;
-using PotatoSoup.custom;
 
-namespace PotatoSoup
-{
+namespace blargle.PotatoSoup {
 
     public class Refs {
 

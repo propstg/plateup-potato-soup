@@ -4,12 +4,12 @@ using KitchenLib.Utils;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PotatoSoup.custom {
+namespace blargle.PotatoSoup.custom {
 
     public class PotatoSoupPlainDish : CustomDish {
 
         public override string UniqueNameID => "Potato Soup Plain Dish";
-        public override DishType Type => DishType.Base;
+        public override DishType Type => DishType.Main;
         public override GameObject DisplayPrefab => Main.bundle.LoadAsset<GameObject>("PotatoSoupPlainCard");
         public override GameObject IconPrefab => Main.bundle.LoadAsset<GameObject>("PotatoSoupPlainCard");
 
@@ -18,7 +18,12 @@ namespace PotatoSoup.custom {
         public override bool IsAvailableAsLobbyOption => true;
         public override bool RequiredNoDishItem => true;
         public override List<string> StartingNameSet => new List<string> {
-            "Denrast",
+            "POTATO SOUP",
+            "Potato Pantry",
+            "Dumpling Dreamland",
+            "Denrast Dumplings",
+            "Tateresa",
+            "Samwise Special",
         };
 
         public override HashSet<Item> MinimumIngredients => new HashSet<Item> {
@@ -30,7 +35,6 @@ namespace PotatoSoup.custom {
         };
 
         public override HashSet<Process> RequiredProcesses => new HashSet<Process> {
-            Refs.CookProcess,
             Refs.CookProcess,
         };
 

@@ -6,7 +6,7 @@ using KitchenLib.Utils;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PotatoSoup.custom {
+namespace blargle.PotatoSoup.custom {
 
     public class PotatoSoupPlainCooked : CustomItem {
 
