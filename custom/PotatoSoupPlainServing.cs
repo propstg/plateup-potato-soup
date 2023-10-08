@@ -11,7 +11,7 @@ namespace blargle.PotatoSoup.custom {
         public override GameObject Prefab => Main.bundle.LoadAsset<GameObject>("PotatoSoupServing");
         public override string ColourBlindTag => "Ps";
         public override ItemValue ItemValue => ItemValue.Medium;
-
+        public override ItemStorage ItemStorageFlags => ItemStorage.StackableFood;
 
         public override void OnRegister(Item gameDataObject) {
             MaterialUtils.ApplyMaterial(Prefab, "bowl", CommonMaterials.bowl);
