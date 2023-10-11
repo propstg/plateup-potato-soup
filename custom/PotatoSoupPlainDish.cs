@@ -13,7 +13,7 @@ namespace blargle.PotatoSoup.custom {
         public override GameObject DisplayPrefab => Main.bundle.LoadAsset<GameObject>("PotatoSoupPlainCard");
         public override GameObject IconPrefab => Main.bundle.LoadAsset<GameObject>("PotatoSoupPlainCard");
 
-        public override DishCustomerChange CustomerMultiplier => DishCustomerChange.LargeIncrease;
+        public override DishCustomerChange CustomerMultiplier => DishCustomerChange.None;
         public override Unlock.RewardLevel ExpReward => Unlock.RewardLevel.Medium;
         public override bool IsAvailableAsLobbyOption => true;
         public override bool RequiredNoDishItem => true;
