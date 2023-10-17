@@ -9,7 +9,7 @@ namespace blargle.PotatoSoup.custom {
     public class PotatoSoupPlainDish : CustomDish {
 
         public override string UniqueNameID => "Potato Soup Plain Dish";
-        public override DishType Type => DishType.Main;
+        public override DishType Type => DishType.Base;
         public override GameObject DisplayPrefab => Main.bundle.LoadAsset<GameObject>("PotatoSoupPlainCard");
         public override GameObject IconPrefab => Main.bundle.LoadAsset<GameObject>("PotatoSoupPlainCard");
 
@@ -35,7 +35,7 @@ namespace blargle.PotatoSoup.custom {
         };
 
         public override HashSet<Process> RequiredProcesses => new HashSet<Process> {
-            Refs.CookProcess,
+            Refs.RequireOven,
         };
 
         public override List<Dish.MenuItem> ResultingMenuItems => new List<Dish.MenuItem>() {
@@ -43,7 +43,7 @@ namespace blargle.PotatoSoup.custom {
         };
 
         public override Dictionary<Locale, string> Recipe => new Dictionary<Locale, string> {
-            { Locale.English, "1. Chop potatoes and add to pot with water and cook\n2. Add milk and cook\n3. Crack egg and mix with flour, add to pot. Repeat 2 more times and cook.\n4. Serve." }
+            { Locale.English, "1. Chop potatoes and add to pot with water and cook\n2. Add milk and cook\n3. Crack egg and mix with flour, add to pot, cook.\n4. Serve." }
         };
 
         public override List<(Locale, UnlockInfo)> InfoList => new List<(Locale, UnlockInfo)> {

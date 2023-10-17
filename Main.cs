@@ -12,7 +12,7 @@ namespace blargle.PotatoSoup {
 
         public const string MOD_ID = "blargle.PotatoSoup";
         public const string MOD_NAME = "Potato Soup";
-        public const string MOD_VERSION = "0.0.2";
+        public const string MOD_VERSION = "0.0.3";
         public const string MOD_AUTHOR = "blargle";
 
         public static AssetBundle bundle;

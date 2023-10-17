@@ -32,20 +32,6 @@ namespace blargle.PotatoSoup.custom {
                     Refs.EggDough,
                 },
             },
-            new ItemSet() {
-                Max = 1,
-                Min = 1,
-                Items = new List<Item>() {
-                    Refs.EggDough,
-                },
-            },
-            new ItemSet() {
-                Max = 1,
-                Min = 1,
-                Items = new List<Item>() {
-                    Refs.EggDough,
-                },
-            },
         };
 
         public override List<Item.ItemProcess> Processes => new List<Item.ItemProcess> {
@@ -93,6 +79,7 @@ namespace blargle.PotatoSoup.custom {
                             GameObjectUtils.GetChildObject(prefab, "ingredients/dumplings-1"),
                             GameObjectUtils.GetChildObject(prefab, "ingredients/dumplings-2"),
                         },
+                        DrawAll = true,
                     },
                 };
             }

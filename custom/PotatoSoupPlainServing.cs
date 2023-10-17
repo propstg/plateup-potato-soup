@@ -15,9 +15,9 @@ namespace blargle.PotatoSoup.custom {
 
         public override void OnRegister(Item gameDataObject) {
             MaterialUtils.ApplyMaterial(Prefab, "bowl", CommonMaterials.bowl);
-            MaterialUtils.ApplyMaterial(Prefab, "liquid", CommonMaterials.milk);
+            MaterialUtils.ApplyMaterial(Prefab, "liquid", CommonMaterials.cookedMilk);
             MaterialUtils.ApplyMaterial(Prefab, "potatoes", CommonMaterials.potatoes);
-            MaterialUtils.ApplyMaterial(Prefab, "dumplings", CommonMaterials.eggDough);
+            MaterialUtils.ApplyMaterial(Prefab, "dumplings", CommonMaterials.cookedDumping);
         }
     }
 }

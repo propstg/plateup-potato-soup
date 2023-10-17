@@ -18,6 +18,7 @@ namespace blargle.PotatoSoup {
 
         public static Process CookProcess => (Process) GDOUtils.GetExistingGDO(ProcessReferences.Cook);
         public static Process ChopProcess => (Process) GDOUtils.GetExistingGDO(ProcessReferences.Chop);
+        public static Process RequireOven => (Process) GDOUtils.GetExistingGDO(ProcessReferences.RequireOven);
 
         public static Item PotatoesInMilkCooked => GDOUtils.GetCastedGDO<Item, PotatoesInMilkCooked>();
         public static Item PotatoesInMilkUncooked => GDOUtils.GetCastedGDO<Item, PotatoesInMilkUncooked>();

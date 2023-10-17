@@ -14,7 +14,7 @@ namespace blargle.PotatoSoup.custom {
         public override GameObject Prefab => Main.bundle.LoadAsset<GameObject>("PotatoSoupPlainCooked");
         public override bool AllowSplitMerging => false;
         public override float SplitSpeed => 1f;
-        public override int SplitCount => 5;
+        public override int SplitCount => 6;
         public override Item SplitSubItem => Refs.PotatoSoupPlainServing;
         public override List<Item> SplitDepletedItems => new List<Item> { Refs.Pot };
         public override Item DisposesTo => Refs.Pot;
@@ -22,10 +22,10 @@ namespace blargle.PotatoSoup.custom {
 
         public override void OnRegister(Item gameDataObject) {
             MaterialUtils.ApplyMaterial(Prefab, "pot", CommonMaterials.metalShiny);
-            MaterialUtils.ApplyMaterial(Prefab, "ingredients/dumplings-0", CommonMaterials.eggDough);
-            MaterialUtils.ApplyMaterial(Prefab, "ingredients/dumplings-1", CommonMaterials.eggDough);
-            MaterialUtils.ApplyMaterial(Prefab, "ingredients/dumplings-2", CommonMaterials.eggDough);
-            MaterialUtils.ApplyMaterial(Prefab, "ingredients/liquid", CommonMaterials.milk);
+            MaterialUtils.ApplyMaterial(Prefab, "ingredients/dumplings-0", CommonMaterials.cookedDumping);
+            MaterialUtils.ApplyMaterial(Prefab, "ingredients/dumplings-1", CommonMaterials.cookedDumping);
+            MaterialUtils.ApplyMaterial(Prefab, "ingredients/dumplings-2", CommonMaterials.cookedDumping);
+            MaterialUtils.ApplyMaterial(Prefab, "ingredients/liquid", CommonMaterials.cookedMilk);
             MaterialUtils.ApplyMaterial(Prefab, "ingredients/potatoes", CommonMaterials.potatoes);
 
             GameObject clonedColourBlind = ColorblindUtils.cloneColourBlindObjectAndAddToItem(gameDataObject);
