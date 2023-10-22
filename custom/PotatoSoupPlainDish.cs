@@ -10,6 +10,8 @@ namespace blargle.PotatoSoup.custom {
 
         public override string UniqueNameID => "Potato Soup Plain Dish";
         public override DishType Type => DishType.Base;
+        public override UnlockGroup UnlockGroup => UnlockGroup.Dish;
+        public override CardType CardType => CardType.Default;
         public override GameObject DisplayPrefab => Main.bundle.LoadAsset<GameObject>("PotatoSoupPlainCard");
         public override GameObject IconPrefab => Main.bundle.LoadAsset<GameObject>("PotatoSoupPlainCard");
 
@@ -69,6 +71,10 @@ namespace blargle.PotatoSoup.custom {
             MaterialUtils.ApplyMaterial(prefab, "PotatoSoupServing/liquid", CommonMaterials.milk);
             MaterialUtils.ApplyMaterial(prefab, "PotatoSoupServing/potatoes", CommonMaterials.potatoes);
             MaterialUtils.ApplyMaterial(prefab, "PotatoSoupServing/dumplings", CommonMaterials.eggDough);
+        }
+
+        public override void OnRegister(Dish gdo) {
+            gdo.Difficulty = 2;
         }
     }
 }
