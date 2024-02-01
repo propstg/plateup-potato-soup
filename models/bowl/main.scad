@@ -1,5 +1,6 @@
 include <./bowl.scad>
 include <./liquid.scad>
+include <./cheese.scad>
 include <./potatoes.scad>
 include <./dumplings.scad>
 

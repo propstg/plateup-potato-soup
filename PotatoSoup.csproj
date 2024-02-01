@@ -1,12 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
-    <LangVersion>8</LangVersion>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <LangVersion>8</LangVersion>
+        <PathMap>$(MSBuildThisFileDirectory)=./</PathMap>
+        <VersionPrefix>0.1.0</VersionPrefix>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Yariazen.PlateUp.ModBuildUtilities" Version="1.10.21" />
-  </ItemGroup>
+    <PropertyGroup Label="Override Stack trace file locations">
+        <PathMap>$(MSBuildThisFileDirectory)=./</PathMap>
+    </PropertyGroup>
 
+    <PropertyGroup>
+        <AssetBundlePath>C:\Users\Gregory\My project (3)\Assets\StreamingAssets\potatosoup.assets</AssetBundlePath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Yariazen.PlateUp.ModBuildUtilities" Version="1.10.21" />
+    </ItemGroup>
 </Project>

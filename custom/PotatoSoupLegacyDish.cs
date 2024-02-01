@@ -17,7 +17,7 @@ namespace blargle.PotatoSoup.custom {
 
         public override DishCustomerChange CustomerMultiplier => DishCustomerChange.None;
         public override Unlock.RewardLevel ExpReward => Unlock.RewardLevel.Medium;
-        public override bool IsAvailableAsLobbyOption => true;
+        public override bool IsAvailableAsLobbyOption => false;
         public override bool RequiredNoDishItem => true;
         public override List<string> StartingNameSet => new List<string> {
             "POTATO SOUP",
@@ -26,6 +26,14 @@ namespace blargle.PotatoSoup.custom {
             "Denrast Dumplings",
             "Tateresa",
             "Samwise Special",
+        };
+
+        public override List<Unlock> HardcodedBlockers => new List<Unlock> {
+            Refs.PotatoSoupMainDish
+        };
+
+        public override List<Unlock> HardcodedRequirements => new List<Unlock> {
+            Refs.PotatoSoupLegacyDish
         };
 
         public override HashSet<Item> MinimumIngredients => new HashSet<Item> {
@@ -41,7 +49,7 @@ namespace blargle.PotatoSoup.custom {
         };
 
         public override List<Dish.MenuItem> ResultingMenuItems => new List<Dish.MenuItem>() {
-            new Dish.MenuItem() { Phase = MenuPhase.Main, Item = Refs.PotatoSoupPlainServing, Weight = 1 },
+            new Dish.MenuItem() { Phase = MenuPhase.Main, Item = Refs.PotatoSoupServing, Weight = 1 },
         };
 
         public override Dictionary<Locale, string> Recipe => new Dictionary<Locale, string> {
@@ -49,7 +57,7 @@ namespace blargle.PotatoSoup.custom {
         };
 
         public override List<(Locale, UnlockInfo)> InfoList => new List<(Locale, UnlockInfo)> {
-            { (Locale.English, LocalisationUtils.CreateUnlockInfo("Potato Soup", "", "") )}
+            { (Locale.English, LocalisationUtils.CreateUnlockInfo("Potato Soup (Legacy)", "Outdated. Create a new restaurant to get access to toppings.", "") )}
         };
 
         public override void SetupIconPrefab(GameObject prefab) {

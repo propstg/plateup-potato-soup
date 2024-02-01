@@ -1,4 +1,5 @@
-﻿using KitchenData;
+﻿using ApplianceLib.Api;
+using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.Utils;
 using UnityEngine;
@@ -18,6 +19,7 @@ namespace blargle.PotatoSoup.custom {
             MaterialUtils.ApplyMaterial(Prefab, "liquid", CommonMaterials.cookedMilk);
             MaterialUtils.ApplyMaterial(Prefab, "potatoes", CommonMaterials.potatoes);
             MaterialUtils.ApplyMaterial(Prefab, "dumplings", CommonMaterials.cookedDumping);
+            DummyItemConversions.AddItemConversion(gameDataObject, Refs.PotatoSoupServing, new ItemList(Refs.PotatoSoupPlainServing.ID));
         }
     }
 }
